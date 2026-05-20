@@ -1,0 +1,20 @@
+{
+    "name": "pickle-os-game-store",
+    "version": "1.0.0",
+    "description": "Game store backend for Pickle OS — serves manifests and assets for downloadable mini-games.",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "morgan": "^1.10.0"
+    },
+    "license": "MIT"
+}

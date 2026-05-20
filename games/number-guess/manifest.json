@@ -1,0 +1,14 @@
+{
+    "id": "number-guess",
+    "name": "Number Guess",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "type": "guess",
+    "icon": "ok",
+    "description": "Guess the secret number. Get higher/lower hints. Fewer tries equals higher score.",
+    "config": {
+        "min": 1,
+        "max": 100,
+        "max_attempts": 8
+    }
+}
