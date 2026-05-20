@@ -17,7 +17,7 @@ Backend that serves downloadable mini-games to the Pickle OS device. Each game i
 {
     "id": "quick-tap",
     "name": "Quick Tap",
-    "author": "Pickle OS Team",
+    "author": "Brickle Pickle",
     "version": "1.0.0",
     "type": "tap",
     "icon": "play",
@@ -46,14 +46,24 @@ npm start
 
 Open `http://localhost:3000/api/games` to see the list.
 
-## Deploy to Railway
+## Deploy to Render
 
-1. Create a new Railway project from this repo (or push the `backend/` folder as the project root).
-2. Railway will pick up `package.json` and `railway.json`, build with Nixpacks, and run `npm start`.
-3. Expose the public domain (Railway → Settings → Networking → Generate Domain).
-4. Copy the public URL and set it in the device:
-    - `/pickle-os/sys/config.txt` on the SD card: `game_server=https://your-app.up.railway.app`
+1. Push this repository to GitHub.
+2. In the [Render dashboard](https://dashboard.render.com), click **New → Web Service** and connect the GitHub repo.
+3. Configure the service:
+    - **Root Directory**: `backend`
+    - **Runtime**: `Node`
+    - **Build Command**: `npm install`
+    - **Start Command**: `npm start`
+    - **Instance Type**: `Free`
+4. Click **Create Web Service**. Render builds and deploys automatically.
+5. Once live, copy the public URL (e.g. `https://pickle-os-game-store.onrender.com`) and set it on the device:
+    - `/pickle-os/sys/config.txt` on the SD card: `game_server=https://your-service.onrender.com`
     - Or change the default in `src/network/game_api.h` (`PICKLE_GAME_SERVER_DEFAULT`).
+
+The included [`render.yaml`](render.yaml) Blueprint lets you skip steps 3-4: use **New → Blueprint** in Render, point it at the repo, and the service is created with the right settings.
+
+> Render's free instances sleep after 15 minutes of inactivity. The first request after sleep takes ~30 s to wake. The device tolerates this thanks to the 8 s HTTP timeout plus retry from the Refresh button — but expect a one-time delay on the first store load.
 
 ## Adding a new game
 
