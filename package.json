@@ -1,7 +1,7 @@
 {
     "name": "pickle-os-game-store",
     "version": "1.0.0",
-    "description": "Game store backend for Pickle OS — serves manifests and assets for downloadable mini-games.",
+    "description": "Game store backend for Pickle OS. Serves manifests and Lua scripts for downloadable mini-games.",
     "main": "src/index.js",
     "type": "module",
     "scripts": {

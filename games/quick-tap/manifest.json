@@ -3,16 +3,7 @@
     "name": "Quick Tap",
     "author": "Brickle Pickle",
     "version": "1.0.0",
-    "type": "tap",
+    "entry": "game.lua",
     "icon": "play",
-    "description": "Tap the targets before they vanish. Speed up as you score.",
-    "config": {
-        "duration_s": 30,
-        "target_size": 56,
-        "target_color": "#E53935",
-        "lifetime_start_ms": 1300,
-        "lifetime_decay_ms": 25,
-        "lifetime_floor_ms": 500,
-        "score_per_hit": 1
-    }
+    "description": "Tap the targets before they vanish. Speed up as you score."
 }
