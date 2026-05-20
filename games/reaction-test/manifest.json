@@ -1,0 +1,9 @@
+{
+    "id": "reaction-test",
+    "name": "Reaction Test",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "eye_open",
+    "description": "Wait for the green flash. Tap as fast as you can."
+}

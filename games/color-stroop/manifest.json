@@ -1,0 +1,9 @@
+{
+    "id": "color-stroop",
+    "name": "Color Stroop",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "image",
+    "description": "Tap the button matching the INK color of the word, not the word itself."
+}

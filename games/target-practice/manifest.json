@@ -1,0 +1,9 @@
+{
+    "id": "target-practice",
+    "name": "Target Practice",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "play",
+    "description": "A target slides across the screen. Tap it as many times as you can in 30s."
+}

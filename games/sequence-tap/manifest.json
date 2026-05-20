@@ -1,0 +1,9 @@
+{
+    "id": "sequence-tap",
+    "name": "Sequence Tap",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "list",
+    "description": "Tap the numbered tiles from 1 to 9 in order, as fast as possible."
+}

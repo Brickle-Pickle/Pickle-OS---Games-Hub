@@ -1,0 +1,9 @@
+{
+    "id": "rhythm-tap",
+    "name": "Rhythm Tap",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "refresh",
+    "description": "Tap each time the central pad flashes. Stay on beat to keep your streak."
+}

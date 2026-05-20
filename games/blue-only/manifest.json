@@ -1,0 +1,9 @@
+{
+    "id": "blue-only",
+    "name": "Blue Only",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "file",
+    "description": "Tap the blue dots, never the red ones. Hits and misses both count."
+}

@@ -1,0 +1,9 @@
+{
+    "id": "odd-one-out",
+    "name": "Odd One Out",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "bullet",
+    "description": "Six tiles, one in a slightly different shade. Tap it."
+}

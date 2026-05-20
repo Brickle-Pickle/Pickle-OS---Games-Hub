@@ -1,0 +1,9 @@
+{
+    "id": "bubble-pop",
+    "name": "Bubble Pop",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "ok",
+    "description": "Pop the bubble before it grows too big and bursts."
+}

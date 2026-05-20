@@ -1,0 +1,9 @@
+{
+    "id": "whack-a-mole",
+    "name": "Whack a Mole",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "bell",
+    "description": "Tap the mole as soon as it pops out of a hole."
+}

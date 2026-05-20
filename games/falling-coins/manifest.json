@@ -1,0 +1,9 @@
+{
+    "id": "falling-coins",
+    "name": "Falling Coins",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "icon": "download",
+    "description": "Catch the gold coins as they fall. Miss three and the round ends."
+}
