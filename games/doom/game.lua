@@ -1,6 +1,5 @@
--- NOT DOOM - Raycaster for Pickle OS
+-- DOOM - Raycaster for Pickle OS
 -- A DDA raycaster running 100% in Lua on the ESP32.
--- Every OS must run Doom. This is close enough.
 
 local SW = SCREEN_W
 local SH = SCREEN_H
@@ -122,7 +121,7 @@ local function render()
         end
         canvas.draw_rect(i * COL_W, wy, COL_W, wh, wallColor(dist, side))
     end
-    game.set_hud("NOT DOOM", string.format("%d steps", steps))
+    game.set_hud("DOOM", string.format("%d steps", steps))
 end
 
 local function tryMove(dx, dy)
@@ -187,4 +186,4 @@ lvgl.on_tap(bB, function()
     tryMove(-math.cos(pa) * MOVE_SPEED, -math.sin(pa) * MOVE_SPEED)
 end)
 
-game.toast("NOT DOOM loaded. rip and tear.", "info")
+game.toast("DOOM loaded. rip and tear.", "info")
