@@ -101,9 +101,16 @@ local function castRay(angle)
     return d, side
 end
 
+-- Pre-allocated rectangles: sky, floor, and one per column.
+-- Avoids the ~94 KB contiguous DRAM that a full lv_canvas would need.
+lvgl.create_rect(0, 0, SW, HALF_VH, 0x060614)
+lvgl.create_rect(0, HALF_VH, SW, VIEW_H - HALF_VH, 0x0f0f08)
+local colRects = {}
+for i = 0, NUM_COLS - 1 do
+    colRects[i] = lvgl.create_rect(i * COL_W, 0, COL_W, 1, 0x000000)
+end
+
 local function render()
-    canvas.draw_rect(0, 0, SW, HALF_VH, 0x060614)
-    canvas.draw_rect(0, HALF_VH, SW, HALF_VH, 0x0f0f08)
     for i = 0, NUM_COLS - 1 do
         local angle = pa - FOV * 0.5 + (i + 0.5) / NUM_COLS * FOV
         local dist, side = castRay(angle)
@@ -119,7 +126,10 @@ local function render()
         if wy + wh > VIEW_H then
             wh = VIEW_H - wy
         end
-        canvas.draw_rect(i * COL_W, wy, COL_W, wh, wallColor(dist, side))
+        local r = colRects[i]
+        lvgl.set_pos(r, i * COL_W, wy)
+        lvgl.set_size(r, COL_W, wh)
+        lvgl.set_color(r, wallColor(dist, side))
     end
     game.set_hud("DOOM", string.format("%d steps", steps))
 end
@@ -140,8 +150,6 @@ local function tryMove(dx, dy)
     render()
 end
 
--- Canvas covers the 3D viewport
-canvas.create(0, 0, SW, VIEW_H)
 render()
 
 -- Left turn button (spans both rows)
