@@ -1,7 +1,7 @@
 {
     "id": "doom",
     "name": "DOOM",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "Brickle Pickle",
     "description": "A port of the classic first-person shooter DOOM to Pickle OS.",
     "entry": "game.lua",
