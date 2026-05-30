@@ -1,0 +1,10 @@
+{
+    "id": "deep-loader",
+    "name": "Deep Loader",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "category": "game",
+    "icon": "file",
+    "description": "A cozy platformer. Please wait while the level loads."
+}

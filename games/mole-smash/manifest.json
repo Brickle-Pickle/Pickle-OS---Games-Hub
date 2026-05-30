@@ -1,0 +1,10 @@
+{
+    "id": "mole-smash",
+    "name": "Mole Smash",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "category": "game",
+    "icon": "file",
+    "description": "Whack the mole before it ducks back into its hole."
+}

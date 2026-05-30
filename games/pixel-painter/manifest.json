@@ -1,0 +1,10 @@
+{
+    "id": "pixel-painter",
+    "name": "Pixel Painter",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "category": "game",
+    "icon": "file",
+    "description": "Paint with color swatches and label your masterpiece."
+}

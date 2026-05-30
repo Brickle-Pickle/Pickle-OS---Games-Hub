@@ -1,0 +1,10 @@
+{
+    "id": "coin-rush",
+    "name": "Coin Rush",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "category": "game",
+    "icon": "file",
+    "description": "Sit back and watch the coins pile up in this idle clicker."
+}

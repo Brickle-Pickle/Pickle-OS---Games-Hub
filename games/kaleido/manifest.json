@@ -1,0 +1,10 @@
+{
+    "id": "kaleido",
+    "name": "Kaleido",
+    "author": "Brickle Pickle",
+    "version": "1.0.0",
+    "entry": "game.lua",
+    "category": "game",
+    "icon": "file",
+    "description": "A relaxing generative kaleidoscope you can paint on."
+}
